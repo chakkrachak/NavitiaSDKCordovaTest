@@ -12,9 +12,9 @@ git clone git@github.com:CanalTP/$CordovaNavitiaSDK_GitHubRepository.git
 cd CordovaAppTest
 
 ionic cordova platform add ios
-#ionic cordova platform add android
+ionic cordova platform add android
 ionic cordova plugin add ../$CordovaNavitiaSDK_GitHubRepository
 
 ionic cordova build ios
-#ionic cordova build android
+ionic cordova build android
 cd ..
