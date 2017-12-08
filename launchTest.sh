@@ -28,7 +28,7 @@ CordovaNavitiaSDK_GitHubRepository='CDVNavitiaSDK'
 
 rm -rf ./$CordovaNavitiaSDK_GitHubRepository
 git checkout . && git clean -fd
-rm -rf ./CordovaAppTest/platforms/ios/build/emulator/CordovaAppTest.app
+rm -rf ./CordovaAppTest/platforms/ios/build/emulator/CordovaAppTest.app.dSYM
 rm ./CordovaAppTest/platforms/android/build/outputs/apk/android-debug.apk
 
 git clone git@github.com:CanalTP/$CordovaNavitiaSDK_GitHubRepository.git
@@ -46,5 +46,5 @@ ionic cordova build android
 
 cd ..
 
-ensureFolderExists "./CordovaAppTest/platforms/ios/build/emulator/CordovaAppTest.app"
+ensureFolderExists "./CordovaAppTest/platforms/ios/build/emulator/CordovaAppTest.app.dSYM"
 ensureFileExists "./CordovaAppTest/platforms/android/build/outputs/apk/android-debug.apk"
