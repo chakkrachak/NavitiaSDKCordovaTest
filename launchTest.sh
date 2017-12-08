@@ -15,6 +15,8 @@ ionic cordova platform add ios
 ionic cordova platform add android
 ionic cordova plugin add ../$CordovaNavitiaSDK_GitHubRepository
 
+npm rebuild node-sass --force
+
 ionic cordova build ios
 ionic cordova build android
 cd ..
