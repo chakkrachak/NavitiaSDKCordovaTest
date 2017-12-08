@@ -28,6 +28,8 @@ CordovaNavitiaSDK_GitHubRepository='CDVNavitiaSDK'
 
 rm -rf ./$CordovaNavitiaSDK_GitHubRepository
 git checkout . && git clean -fd
+rm -rf ./CordovaAppTest/platforms/ios/build/emulator/CordovaAppTest.app
+rm ./CordovaAppTest/platforms/android/build/outputs/apk/android-debug.apk
 
 git clone git@github.com:CanalTP/$CordovaNavitiaSDK_GitHubRepository.git
 
