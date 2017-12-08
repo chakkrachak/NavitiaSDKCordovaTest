@@ -5,6 +5,7 @@
 
 CordovaNavitiaSDK_GitHubRepository='CDVNavitiaSDK'
 
+rm -rf ./$CordovaNavitiaSDK_GitHubRepository
 git checkout . && git clean -fd
 
 git clone git@github.com:CanalTP/$CordovaNavitiaSDK_GitHubRepository.git
