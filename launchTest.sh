@@ -8,7 +8,7 @@ CordovaNavitiaSDK_GitHubRepository='CDVNavitiaSDK'
 git checkout . && git clean -fd
 
 git clone git@github.com:CanalTP/$CordovaNavitiaSDK_GitHubRepository.git
-cd $CordovaNavitiaSDK_GitHubRepository
+cd CordovaAppTest
 #ionic cordova platform add ios
 ionic cordova platform add android
 ionic cordova plugin add ../$CordovaNavitiaSDK_GitHubRepository
