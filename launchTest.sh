@@ -15,3 +15,4 @@ ionic cordova plugin add ../$CordovaNavitiaSDK_GitHubRepository
 
 #ionic cordova build ios
 ionic cordova build android
+cd ..
