@@ -37,9 +37,9 @@ cd CordovaAppTest
 
 ionic cordova plugin add ../$CordovaNavitiaSDK_GitHubRepository
 
-ionic cordova platform add android
-ionic cordova build android
-ensureFileExists "./platforms/android/build/outputs/apk/android-debug.apk"
+#ionic cordova platform add android
+#ionic cordova build android
+#ensureFileExists "./platforms/android/build/outputs/apk/android-debug.apk"
 
 npm rebuild node-sass --force
 ionic cordova platform add ios
