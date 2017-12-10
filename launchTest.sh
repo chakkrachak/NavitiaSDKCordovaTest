@@ -35,16 +35,15 @@ git clone git@github.com:CanalTP/$CordovaNavitiaSDK_GitHubRepository.git
 
 cd CordovaAppTest
 
-ionic cordova platform add ios
-ionic cordova platform add android
 ionic cordova plugin add ../$CordovaNavitiaSDK_GitHubRepository
 
-npm rebuild node-sass --force
-
-ionic cordova build ios
+ionic cordova platform add android
 ionic cordova build android
+ensureFileExists "./platforms/android/build/outputs/apk/android-debug.apk"
+
+npm rebuild node-sass --force
+ionic cordova platform add ios
+ionic cordova build ios
+ensureFolderExists "./platforms/ios/build/emulator/CordovaAppTest.app.dSYM"
 
 cd ..
-
-ensureFolderExists "./CordovaAppTest/platforms/ios/build/emulator/CordovaAppTest.app.dSYM"
-ensureFileExists "./CordovaAppTest/platforms/android/build/outputs/apk/android-debug.apk"
