@@ -32,14 +32,12 @@ rm -rf ./CordovaAppTest/platforms/ios/build/emulator/CordovaAppTest.app.dSYM
 rm ./CordovaAppTest/platforms/android/build/outputs/apk/android-debug.apk
 
 git clone git@github.com:CanalTP/$CordovaNavitiaSDK_GitHubRepository.git
-
 cd CordovaAppTest
-
 ionic cordova plugin add ../$CordovaNavitiaSDK_GitHubRepository
 
-#ionic cordova platform add android
-#ionic cordova build android
-#ensureFileExists "./platforms/android/build/outputs/apk/android-debug.apk"
+ionic cordova platform add android
+ionic cordova build android
+ensureFileExists "./platforms/android/build/outputs/apk/android-debug.apk"
 
 npm rebuild node-sass --force
 ionic cordova platform add ios
