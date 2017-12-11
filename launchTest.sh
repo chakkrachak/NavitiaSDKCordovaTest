@@ -51,6 +51,7 @@ fi
 cd CordovaAppTest
 
 ## INSTALL PLUGIN
+npm rebuild node-sass --force
 ionic cordova plugin add $CordovaNavitiaSDK_LocalPath
 
 ## BUILD ANDROID
@@ -59,7 +60,6 @@ ionic cordova build android
 ensureFileExists "./platforms/android/build/outputs/apk/android-debug.apk"
 
 ## BUILD IOS
-npm rebuild node-sass --force
 ionic cordova platform add ios
 ionic cordova build ios
 ensureFolderExists "./platforms/ios/build/emulator/CordovaAppTest.app.dSYM"
