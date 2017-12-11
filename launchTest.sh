@@ -43,8 +43,8 @@ cleanWorkspace
 
 ## RETRIEVE SDK
 if [ -z "$CordovaNavitiaSDK_LocalPath" ] ; then
-        retrieveNavitiaSDK_master
-    	CordovaNavitiaSDK_LocalPath=../$CordovaNavitiaSDK_ProjectName
+    retrieveNavitiaSDK_master
+    CordovaNavitiaSDK_LocalPath=../$CordovaNavitiaSDK_ProjectName
 fi
 
 ## GO TO APP TEST FOLDER
