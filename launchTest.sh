@@ -65,6 +65,7 @@ cd CordovaAppTest
 ## Building
 npm rebuild node-sass --force
 ensureFolderExists $CordovaNavitiaSDK_LocalPath
+ionic cordova plugin remove cordova-plugin-navitia-sdk
 ionic cordova plugin add $CordovaNavitiaSDK_LocalPath && buildAndroid && buildIOS
 
 ## GO BACK TO MAIN FOLDER
